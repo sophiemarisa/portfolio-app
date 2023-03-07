@@ -1,0 +1,67 @@
+.section-title{
+    padding: 15px;
+    padding-bottom: 0px;
+  }
+
+  .section-title h2{
+    font-size: 55px;
+    text-align: center;
+    color: black;
+    font-weight: 200px;
+  }
+
+  #Work{
+    margin-top: 0px;
+  }
+
+  #Skills{
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills_card{
+    align-items: center;
+    justify-content: center;
+  }
+  
+.centerBlock {
+    display: table;
+    margin: auto;
+  }
+
+  .card-header h3{
+    font-size: 30px;
+    text-align: center;
+    color: var(--green-theme);
+    font-weight: 300;
+  }
+
+  .list-group{
+    width: auto;
+  }
+
+  html{
+    overflow-x: hidden;
+  }
+
+  #hardskill{
+    margin-right: 40px;
+  }
+
+  #softskill{
+    margin-left: 40px;
+  }
+
+#About{
+    height: auto;
+}
+
+.about-me p{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: var(--green-theme) 2px solid;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
