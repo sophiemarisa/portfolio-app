@@ -1,54 +1,35 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 import "./header.css"
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+//import Container from 'react-bootstrap/Container';
+import { Navbar, Nav } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 
 
-function Header() {
+const Header = () => {
     return (
-        <Navbar bg="light" expand="lg" variant="light">
-            <Navbar.Brand href="#home">Sophie Charlwood</Navbar.Brand>
+        <Navbar bg="light" expand="lg">
+            <LinkContainer to="/">
+                <Navbar.Brand>Sophie Charlwood</Navbar.Brand>
+            </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <NavLink to="/" >Home</NavLink>
-                    <NavLink to="/projects">Projects</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <LinkContainer to="/">
+                        <Nav.Link>Home</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/contact">
+                        <Nav.Link>Contact</Nav.Link>
+                    </LinkContainer>
+                    <LinkContainer to="/projects">
+                        <Nav.Link>Projects</Nav.Link>
+                    </LinkContainer>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
     )
-};
+}
 
-export default Header;
+export default Header
 
-
-
-{/* <Navbar bg="light" expand="lg">
-    <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-                <Nav.Link
-                    to="/"
-                >
-                    Home
-                </Nav.Link>
-                <NavLink
-                    to="projects"
-                >
-                    Projects
-                </NavLink>
-                <NavLink
-                    to="contact"
-                >
-                    Contact
-                </NavLink>
-            </Nav>
-        </Navbar.Collapse>
-    </Container>
-</Navbar> */}

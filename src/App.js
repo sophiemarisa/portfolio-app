@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter as HashRouter, Route, Routes } from 'react-router-dom';
+//import { HashRouter as HashRouter, Route, Routes, Switch } from 'react-router-dom';
+import { HashRouter as HashRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Contact from './components/Contact/contact';
 import Header from './components/Header/header';
@@ -7,20 +8,21 @@ import HomeScreen from './components/Home/home';
 import ProjectPage from './components/Project/ProjectPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
-    <HashRouter>
-      <div>
+    <React.StrictMode>
+      <HashRouter>
         <Header />
-        {/* Wrap Route elements in a Routes component */}
         <Routes>
-          <Route path="/" element={<HomeScreen />} />
-          <Route path="projects" element={<ProjectPage />} />
-          <Route path="contact" element={<Contact />} />
+          <Route exact path="/" element={<HomeScreen/>} />
+          <Route exact path="/contact" element={<Contact/>} />
+          <Route exact path="/projects" element={<ProjectPage/>} />
         </Routes>
-      </div>
-    </HashRouter>
+      </HashRouter>
+    </React.StrictMode>
   );
 }
 
 export default App;
+
