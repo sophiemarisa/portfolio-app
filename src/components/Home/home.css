@@ -1,67 +1,122 @@
-.section-title{
-    padding: 15px;
-    padding-bottom: 0px;
-  }
-
-  .section-title h2{
-    font-size: 55px;
-    text-align: center;
-    color: black;
-    font-weight: 200px;
-  }
-
-  #Work{
-    margin-top: 0px;
-  }
-
-  #Skills{
-    display: flex;
-    justify-content: center;
-  }
-
-  .skills_card{
-    align-items: center;
-    justify-content: center;
-  }
-  
-.centerBlock {
-    display: table;
-    margin: auto;
-  }
-
-  .card-header h3{
-    font-size: 30px;
-    text-align: center;
-    color: var(--green-theme);
-    font-weight: 300;
-  }
-
-  .list-group{
-    width: auto;
-  }
-
-  html{
-    overflow-x: hidden;
-  }
-
-  #hardskill{
-    margin-right: 40px;
-  }
-
-  #softskill{
-    margin-left: 40px;
-  }
-
-#About{
-    height: auto;
+*{
+  overflow-x: hidden;
 }
 
-.about-me p{
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: var(--green-theme) 2px solid;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+
+.introJumbotron {
+  display: flex;
+  height: auto;
+  margin-top: 6rem;
+  margin-bottom: 10%;
+}
+
+.introButton {
+  width: 170px;
+  padding-left: 2px;
+  padding-right: 2px;
+  display: block;
+  align-items: center;
+
+}
+
+.rightSide>* {
+  position: absolute;
+  z-index: 1;
+}
+
+.profilePic {
+  transform: scale(0.50);
+  left: 45%;
+  top: -5%;
+  border-radius: 30%;
+}
+
+.watercolour {
+  transform: scale(0.94);
+  left: 45%;
+  top: -7%;
+  z-index: 1;
+
+}
+
+
+.leftSide {
+  margin-left: 20%;
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 10%;
+}
+
+.mySkills {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  justify-content: space-between;
+
+  align-items: flex-end;
+  padding-right: 30%;
+  padding-bottom: 20%;
+}
+
+.mySkills>:nth-child(1){
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.mySkills>:nth-child(2){
+  color: var(--purpleDark);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.skillsButton{
+  margin-top: 50px;
+}
+
+
+.introName {
+  display: flex;
+  flex-direction: column;
+}
+
+.introName>:nth-child(1) {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.introName>:nth-child(2) {
+  color: var(--purpleDark);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.introName>:nth-child(3) {
+  color: black;
+  font-weight: 100;
+
+}
+
+.card{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+
+}
+
+.list-group-item{
+  overflow: hidden!important;
+  text-align: center;
+}
+
+.card-header{
+  overflow: hidden!important;
+  text-align: center;
+}
