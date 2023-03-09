@@ -3,9 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProjectCard.css';
 import Card from 'react-bootstrap/Card';
 
+function getURLS(props){
+
+  const jsonURL = props;
+  const cleanedUrlString  = jsonURL.replace(/\\/g , '');
+
+  return cleanedUrlString;
+}
+
 function ProjectCard(props) {
   return (
-    <Card style={{ width: '60rem', height: 'auto', contentAlign:'center' }}>
+    <Card style={{  contentAlign:'center' }}>
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>

@@ -13,7 +13,7 @@ function HomeScreen() {
 
       <div className="introJumbotron">
         <Row>
-          <Col sm={6} xs={6}>
+          <Col m={6} >
             <div className="leftSide">
               <div className="introName">
                 <span>Hi! I'm</span>
@@ -28,7 +28,7 @@ function HomeScreen() {
             </div>
           </Col>
 
-          <Col sm={6} xs={6}>
+          <Col m={6} >
             <div className="rightSide">
               <img src={watercolour} class="watercolour" />
               <img src={profilePic} class="profilePic" />
@@ -39,7 +39,8 @@ function HomeScreen() {
 
       </div>
       <Row>
-        <Col sm={6} xs={1}>
+        <Col m={6} class="secondRow">
+          <div className="blur skillBlueBlur"></div>
           <div className="mySkills">
             <span>My</span>
             <span>skills</span>
@@ -49,10 +50,10 @@ function HomeScreen() {
 
           </div>
         </Col>
-        <Col sm={6} xs={3}>
+        <Col md={3} >
           <div className="skillCards">
             <div className="hardSkills">
-              <Card style={{ width: '18rem', left:'1100px'}}>
+              <Card style={{ width: '18rem'}}>
                 <Card.Header>Hard Skills</Card.Header>
                 <ListGroup variant="flush">
                   <ListGroup.Item>HTML</ListGroup.Item>
@@ -69,14 +70,10 @@ function HomeScreen() {
           </div>
         </Col>
 
-      </Row>
-      <Row>
-        <Col sm={6} xs={1}>
-        </Col>
-        <Col sm={6} xs={3}>
+        <Col sm={3} >
           <div className="skillCards">
             <div className="softSkills">
-              <Card style={{ width: '18rem', left:'1100px'}}>
+              <Card style={{ width: '18rem'}}>
                 <Card.Header>Soft Skills</Card.Header>
                 <ListGroup variant="flush">
                   <ListGroup.Item>Organisation and time management</ListGroup.Item>

@@ -2,6 +2,9 @@
   overflow-x: hidden;
 }
 
+.page{
+  max-width: 100%;
+}
 
 .introJumbotron {
   display: flex;
@@ -29,6 +32,7 @@
   left: 45%;
   top: -5%;
   border-radius: 30%;
+  height: auto;
 }
 
 .watercolour {
@@ -56,10 +60,10 @@
   height: auto;
   justify-content: center;
   justify-content: space-between;
-
   align-items: flex-end;
-  padding-right: 30%;
-  padding-bottom: 20%;
+  padding-right: 10%;
+  padding-bottom: 50%;
+  vertical-align: top;
 }
 
 .mySkills>:nth-child(1){
@@ -75,7 +79,7 @@
 }
 
 .skillsButton{
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 
@@ -94,6 +98,7 @@
   color: var(--purpleDark);
   font-weight: bold;
   font-size: 3rem;
+  margin-bottom: 0px;
 }
 
 .introName>:nth-child(3) {
@@ -103,12 +108,9 @@
 }
 
 .card{
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-items: center;
-
+  height: auto!important;
+  border-radius: 30px!important;
+  width: auto!important;
 }
 
 .list-group-item{
@@ -119,4 +121,29 @@
 .card-header{
   overflow: hidden!important;
   text-align: center;
+  background-color: var(--purple)!important;
+}
+
+.blur{
+  background-color: var(--blue);
+  height:200px;
+  width: 200px;
+  filter: blur(30px);
+  border-radius: 40%;
+}
+
+.skillsBlur{
+  position: relative;
+  left: -200px;
+  top: -180px;
+}
+
+.skillBlueBlur{
+  position: relative;
+  left:200px;
+  top:20px
+}
+
+.col{
+  height: auto!important;
 }

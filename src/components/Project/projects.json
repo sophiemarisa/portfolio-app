@@ -16,28 +16,28 @@
     {
         "id": 3,
         "name": "COMING SOON",
-        "image": "https://x2u6a7s2.stackpathcdn.com/wp-content/uploads/2020/08/coming-soon-image.jpg",
+        "image": "./imgs/coming-soon.png",
         "githublink": "NA",
         "websitelink": "NA"
     },
     {
         "id": 4,
         "name": "COMING SOON",
-        "image": "https://x2u6a7s2.stackpathcdn.com/wp-content/uploads/2020/08/coming-soon-image.jpg",
+        "image": "./imgs/coming-soon.png",
         "githublink": "NA",
         "websitelink": "NA"
     },
     {
         "id": 5,
         "name": "COMING SOON",
-        "image": "https://x2u6a7s2.stackpathcdn.com/wp-content/uploads/2020/08/coming-soon-image.jpg",
+        "image": "./imgs/coming-soon.png",
         "githublink": "NA",
         "websitelink": "NA"
     },
     {
         "id": 6,
         "name": "COMING SOON",
-        "image": "https://x2u6a7s2.stackpathcdn.com/wp-content/uploads/2020/08/coming-soon-image.jpg",
+        "image": "./imgs/coming-soon.png",
         "githublink": "NA",
         "websitelink": "NA"
     }

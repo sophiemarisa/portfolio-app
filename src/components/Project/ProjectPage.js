@@ -2,6 +2,8 @@ import React, { Component} from 'react';
 import ProjectCard from "./ProjectCard";
 import projects from './projects.json';
 import Wrapper from "./wrapper";
+import './ProjectPage.css';
+
 
 class ProjectPage extends Component{
     state = { //state can be set to anything, state can be different depending on app, usually changes depending on user actions
