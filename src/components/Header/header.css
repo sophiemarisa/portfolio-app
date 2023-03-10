@@ -1,4 +1,19 @@
-.Navbar{
+.navbar{
     margin-left: 0!important;
     z-index: 100;
+    background-color: var(--blue)!important;
+}
+
+.navbar-brand{
+    margin-left: 20px;
+}
+
+.nav-link:hover{
+    color: var(--purpleDark)!important;
+    font-weight: 700;
+}
+
+.nav-link.active{
+    color: var(--purpleDark)!important;
+    font-weight: 700;
 }

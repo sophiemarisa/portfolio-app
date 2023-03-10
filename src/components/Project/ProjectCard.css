@@ -4,13 +4,27 @@
   height: auto!important;
   margin: 1rem;
   position: relative;
-  width: 70%!important;
   box-shadow: 0 3px 6px #999, 0 3px 6px #999;
   text-align: left;
   text-align: center;
   overflow: hidden;
+  width: 1000px;
 }
 
 .card-title{
   overflow: hidden;
+}
+
+.projectCard{
+  background: #fff;
+  border-radius: 2px;
+  height: auto!important;
+  width: 100px!important;
+  margin: 1rem;
+  position: relative;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+  text-align: center;
+  overflow: hidden;
+  width: 1000px;
 }

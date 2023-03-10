@@ -57,13 +57,10 @@
 .mySkills {
   display: flex;
   flex-direction: column;
-  height: auto;
-  justify-content: center;
   justify-content: space-between;
   align-items: flex-end;
   padding-right: 10%;
-  padding-bottom: 50%;
-  vertical-align: top;
+
 }
 
 .mySkills>:nth-child(1){
@@ -110,7 +107,7 @@
 .card{
   height: auto!important;
   border-radius: 30px!important;
-  width: auto!important;
+ 
 }
 
 .list-group-item{

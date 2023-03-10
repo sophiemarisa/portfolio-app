@@ -13,7 +13,7 @@ function getURLS(props){
 
 function ProjectCard(props) {
   return (
-    <Card style={{  contentAlign:'center' }}>
+    <Card class="projectCard" style={{  contentAlign:'center' }}>
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
