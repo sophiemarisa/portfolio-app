@@ -11,15 +11,18 @@ function getURLS(props){
   return cleanedUrlString;
 }
 
+//the props. has to match the map key not the json key!! 
+
 function ProjectCard(props) {
   return (
     <Card class="projectCard" style={{  contentAlign:'center' }}>
       <Card.Img variant="top" src={props.image} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
-        <Card.Link href={props.githublink}>GitHub Link</Card.Link>
-        <Card.Link href={props.websitelink}>Website Link</Card.Link>
-      </Card.Body>
+        <Card.Link href={props.github}>GitHub Link</Card.Link>
+        {console.log(props.github)}
+        <Card.Link href={props.website}>Website Link</Card.Link>
+      </Card.Body> 
     </Card>
   );
 }

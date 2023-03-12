@@ -4,13 +4,14 @@ import { Col } from "react-bootstrap";
 import github from "../../src_imgs/github.png";
 import email from "../../src_imgs/email.png";
 import linkedin from "../../src_imgs/linkedin.png";
-import './contact.css'
+import './contact.css';
+import ContactForm from "./contactForm";
 
 function Contact() {
     return (
       <div >
           <Row>
-            <Col sm={4} align="center">
+            <Col sm={4} align="center" >
               <a href="https://github.com/sophiemarisa"><img class="img" src={github}></img></a>
             </Col>
             <Col sm={4} align="center">
@@ -19,7 +20,13 @@ function Contact() {
             <Col sm={4} align="center">
               <a href="https://www.linkedin.com/in/scharlwood/"><img class="img"  src={linkedin}></img></a>
             </Col>
-          
+          </Row>
+          <Row>
+            <Col sm={12} align="center">
+              <div class="contactForm">
+                <ContactForm></ContactForm>
+              </div>
+            </Col>
           </Row>
       </div>
     );

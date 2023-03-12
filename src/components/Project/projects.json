@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Ethereum Wallet Scanner",
         "image": "./imgs/eth-scan-img.jpg",
-        "githublink": "href = https://github.com/LillyIlex/eth-wallet-checker",
+        "githublink": "https://github.com/LillyIlex/eth-wallet-checker",
         "websitelink": "https://lillyilex.github.io/eth-wallet-checker/"
     },
     {

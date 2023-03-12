@@ -1,0 +1,18 @@
+#formTitle{
+    overflow: hidden;
+}
+
+.form-control{
+    width: 600px!important;
+}
+
+.formBtn{
+    margin-bottom: 30px;
+}
+
+.successMessage{
+    overflow: hidden;
+    border: solid 3px var(--blue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

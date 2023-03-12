@@ -6,6 +6,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import './home.css';
 import watercolour from "../../src_imgs/watercolour.png";
 import profilePic from "../../src_imgs/profilepic.jpeg";
+import CV from "../../src_imgs/CV.pdf";
 
 
 function HomeScreen() {
@@ -45,9 +46,7 @@ function HomeScreen() {
               <div className="mySkills">
                 <span>My</span>
                 <span>skills</span>
-
-                <button className="button-74 skillsButton" >Download CV</button>
-
+                <button className="button-74 skillsButton" onClick = {() => window.open(CV) }>Download CV</button>
                 <div className="blur skillsBlur" style={{ background: "#d0dcff" }}></div>
 
               </div>
