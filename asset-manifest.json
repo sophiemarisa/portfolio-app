@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio-app/static/css/main.eddb7a2c.css",
+    "main.js": "/portfolio-app/static/js/main.a9be5e1f.js",
+    "static/media/watercolour.png": "/portfolio-app/static/media/watercolour.4d964849d4df66da2abb.png",
+    "static/media/CV.pdf": "/portfolio-app/static/media/CV.be9122aea470fbb96d6c.pdf",
+    "static/media/profilepic.jpeg": "/portfolio-app/static/media/profilepic.c083fbd0775999ca630a.jpeg",
+    "static/media/email.png": "/portfolio-app/static/media/email.a8f1513c8e3bfed8172e.png",
+    "index.html": "/portfolio-app/index.html",
+    "main.eddb7a2c.css.map": "/portfolio-app/static/css/main.eddb7a2c.css.map",
+    "main.a9be5e1f.js.map": "/portfolio-app/static/js/main.a9be5e1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eddb7a2c.css",
+    "static/js/main.a9be5e1f.js"
+  ]
+}
