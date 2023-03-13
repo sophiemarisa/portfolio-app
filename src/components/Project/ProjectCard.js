@@ -3,15 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProjectCard.css';
 import Card from 'react-bootstrap/Card';
 
-function getURLS(props){
 
-  const jsonURL = props;
-  const cleanedUrlString  = jsonURL.replace(/\\/g , '');
-
-  return cleanedUrlString;
-}
-
-//the props. has to match the map key not the json key!! 
+//the props. has to match th                                                                                                        e map key not the json key!! 
 
 function ProjectCard(props) {
   return (

@@ -9,11 +9,9 @@ const ContactForm = () => {
 
   };
 
-
   return (
     <div className="container mt-5" id="form">
-      <h2 className="mb-3" id="formTitle">Contact Me Here!</h2>
-        <h2 className='successMessage' style={(status == "Submit") ? { visibility: "hidden" } : { visibility: "visible" }}>Thanks, I will get back to you as soon as possible!</h2>
+      <h2 className="mb-3" id="formTitle" style={(status == "Submit") ? { overflow: "hidden" } : { overflow: "hidden", border: "solid 3px var(--blue)", paddingTop: "10px", paddingBottom: "10px"}}> {(status == "Submit") ? "Contact Me Here!" : "Thanks, I will be in contact as soon as possible!"}</h2>
       <form onSubmit={handleSubmit} style={(status == "Submit") ? { visibility: "visible" } : { visibility: "hidden" }}>
         <div className="mb-3">
           <label className="form-label" htmlFor="name">
