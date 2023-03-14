@@ -11,95 +11,94 @@ import { useNavigate } from "react-router-dom";
 
 
 function HomeScreen() {
-  let navigate = useNavigate(); 
-  const routeChange = () =>{ 
-    let path = `/projects`; 
+  let navigate = useNavigate();
+  const routeChange = () => {
+    let path = `/projects`;
     navigate(path);
-  }
+  };
+  return (
+    <div className="page" style={{ overflowY: "scroll" }}>
 
-      return (
-        <div className="page" style={{ overflowY: "scroll" }}>
+      <div className="introJumbotron">
+        <Row>
+          <Col m={6} >
+            <div className="leftSide">
+              <div className="introName">
+                <span>Hi! I'm</span>
+                <span>Sophie Charlwood</span>
+                <span>Learning Frontend Development including HTML, CSS, JavaScript, Node.js, React and OOP.
+                  I have completed the edX Frontend Development course and have earned my certification,
+                  I am now cementing my knowledge by creating personal projects to build my portfolio.
+                </span>
+              </div>
+              <button className="button-74 introButton" onClick={routeChange}>See Projects</button>
 
-          <div className="introJumbotron">
-            <Row>
-              <Col m={6} >
-                <div className="leftSide">
-                  <div className="introName">
-                    <span>Hi! I'm</span>
-                    <span>Sophie Charlwood</span>
-                    <span>Learning Frontend Development including HTML, CSS, JavaScript, Node.js, React and OOP.
-                      I have completed the edX Frontend Development course and have earned my certification,
-                      I am now cementing my knowledge by creating personal projects to build my portfolio.
-                    </span>
-                  </div>
-                  <button className="button-74 introButton" onClick={routeChange}>See Projects</button>
+            </div>
+          </Col>
 
-                </div>
-              </Col>
+          <Col m={6} >
+            <div className="rightSide">
+              <img src={watercolour} class="watercolour" />
+              <img src={profilePic} class="profilePic" />
+            </div>
+          </Col>
 
-              <Col m={6} >
-                <div className="rightSide">
-                  <img src={watercolour} class="watercolour" />
-                  <img src={profilePic} class="profilePic" />
-                </div>
-              </Col>
+        </Row>
 
-            </Row>
+      </div>
+      <Row>
+        <Col sm={6} class="secondRow">
+          <div className="blur skillBlueBlur"></div>
+          <div className="mySkills">
+            <span>My</span>
+            <span>skills</span>
+            <button className="button-74 skillsButton" onClick={() => window.open(CV)}>Download CV</button>
+            <div className="blur skillsBlur" style={{ background: "#d0dcff" }}></div>
 
           </div>
-          <Row>
-            <Col sm={6} class="secondRow">
-              <div className="blur skillBlueBlur"></div>
-              <div className="mySkills">
-                <span>My</span>
-                <span>skills</span>
-                <button className="button-74 skillsButton" onClick = {() => window.open(CV) }>Download CV</button>
-                <div className="blur skillsBlur" style={{ background: "#d0dcff" }}></div>
+        </Col>
+        <Col sm={3} >
+          <div className="skillCards">
+            <div className="hardSkills">
+              <Card style={{ width: '18rem' }}>
+                <Card.Header>Hard Skills</Card.Header>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>HTML</ListGroup.Item>
+                  <ListGroup.Item>CSS</ListGroup.Item>
+                  <ListGroup.Item>JavaScript</ListGroup.Item>
+                  <ListGroup.Item>React</ListGroup.Item>
+                  <ListGroup.Item>Node.js</ListGroup.Item>
+                  <ListGroup.Item>Python</ListGroup.Item>
+                  <ListGroup.Item>Microsoft Power Platform</ListGroup.Item>
+                  <ListGroup.Item>Microsoft Dynamics 365</ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </div>
+          </div>
+        </Col>
 
-              </div>
-            </Col>
-            <Col sm={3} >
-              <div className="skillCards">
-                <div className="hardSkills">
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Header>Hard Skills</Card.Header>
-                    <ListGroup variant="flush">
-                      <ListGroup.Item>HTML</ListGroup.Item>
-                      <ListGroup.Item>CSS</ListGroup.Item>
-                      <ListGroup.Item>JavaScript</ListGroup.Item>
-                      <ListGroup.Item>React</ListGroup.Item>
-                      <ListGroup.Item>Node.js</ListGroup.Item>
-                      <ListGroup.Item>Python</ListGroup.Item>
-                      <ListGroup.Item>Microsoft Power Platform</ListGroup.Item>
-                      <ListGroup.Item>Microsoft Dynamics 365</ListGroup.Item>
-                    </ListGroup>
-                  </Card>
-                </div>
-              </div>
-            </Col>
+        <Col sm={3} >
+          <div className="skillCards">
+            <div className="softSkills">
+              <Card style={{ width: '18rem' }}>
+                <Card.Header>Soft Skills</Card.Header>
+                <ListGroup variant="flush">
+                  <ListGroup.Item>Organisation and time management</ListGroup.Item>
+                  <ListGroup.Item>Presenting and demoing</ListGroup.Item>
+                  <ListGroup.Item>Problem solving</ListGroup.Item>
+                  <ListGroup.Item>Communication and collaboration</ListGroup.Item>
+                  <ListGroup.Item>Work well in fast paced environments</ListGroup.Item>
+                </ListGroup>
+              </Card>
+            </div>
+          </div>
+        </Col>
 
-            <Col sm={3} >
-              <div className="skillCards">
-                <div className="softSkills">
-                  <Card style={{ width: '18rem' }}>
-                    <Card.Header>Soft Skills</Card.Header>
-                    <ListGroup variant="flush">
-                      <ListGroup.Item>Organisation and time management</ListGroup.Item>
-                      <ListGroup.Item>Presenting and demoing</ListGroup.Item>
-                      <ListGroup.Item>Problem solving</ListGroup.Item>
-                      <ListGroup.Item>Communication and collaboration</ListGroup.Item>
-                      <ListGroup.Item>Work well in fast paced environments</ListGroup.Item>
-                    </ListGroup>
-                  </Card>
-                </div>
-              </div>
-            </Col>
+      </Row>
+    </div>
 
-          </Row>
-        </div>
-
-      );
-    }
+  );
+}
 
 export default HomeScreen;
 
