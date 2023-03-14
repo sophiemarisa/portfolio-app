@@ -16,8 +16,9 @@ function HomeScreen() {
     let path = `/projects`;
     navigate(path);
   };
-  return (
-    <div className="page" style={{ overflowY: "scroll" }}>
+        
+      return (
+        <div className="page" style={{ overflowY: "scroll" }}>
 
       <div className="introJumbotron">
         <Row>
