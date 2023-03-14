@@ -15,6 +15,7 @@ function HomeScreen() {
   const routeChange = () =>{ 
     let path = `/projects`; 
     navigate(path);
+  };
         
       return (
         <div className="page" style={{ overflowY: "scroll" }}>
