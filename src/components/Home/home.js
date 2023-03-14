@@ -10,6 +10,12 @@ import CV from "../../src_imgs/CV.pdf";
 
 
 function HomeScreen() {
+      
+        let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/projects`; 
+    navigate(path);
+        
       return (
         <div className="page" style={{ overflowY: "scroll" }}>
 
@@ -25,7 +31,7 @@ function HomeScreen() {
                       I am now cementing my knowledge by creating personal projects to build my portfolio.
                     </span>
                   </div>
-                  <button className="button-74 introButton">See Projects</button>
+                  <button className="button-74 introButton" onClick={routeChange}>See Projects</button>
 
                 </div>
               </Col>
