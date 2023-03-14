@@ -7,9 +7,16 @@ import './home.css';
 import watercolour from "../../src_imgs/watercolour.png";
 import profilePic from "../../src_imgs/profilepic.jpeg";
 import CV from "../../src_imgs/CV.pdf";
+import { useNavigate } from "react-router-dom";
 
 
 function HomeScreen() {
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/projects`; 
+    navigate(path);
+  }
+
       return (
         <div className="page" style={{ overflowY: "scroll" }}>
 
@@ -25,7 +32,7 @@ function HomeScreen() {
                       I am now cementing my knowledge by creating personal projects to build my portfolio.
                     </span>
                   </div>
-                  <button className="button-74 introButton">See Projects</button>
+                  <button className="button-74 introButton" onClick={routeChange}>See Projects</button>
 
                 </div>
               </Col>
